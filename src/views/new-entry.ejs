@@ -1,0 +1,41 @@
+<%- include ('partials/_header')%>
+
+<!-- centra el contenido -->
+<div class="col-md-4 offset-md-4">
+
+  <h2 class="text-center mb-4">Registrar Cliente</h2>
+
+  <div class="card p-2">
+    <form method="POST" action="/new-entry">
+      <div class="container">
+
+        <div class="form-group mt-1">
+          <label for="asesor">Asesor</label>
+          <input type="text" name="asesor" id="asesor" class="form-control" placeholder="Nombre del asesor" required>
+        </div>
+
+        <div class="form-group mt-1">
+          <label for="cliente">Cliente</label>
+          <input type="text" name="cliente" id="cliente" class="form-control" placeholder="Nombre del cliente" required>
+        </div>
+
+        <div class="form-group mt-1">
+          <label for="curp">Curp</label>
+          <input type="text" name="curp" id="curp" class="form-control" placeholder="Curp" required>
+        </div>
+
+        <div class="form-group mt-1">
+          <label for="observaciones">Observaciones</label>
+          <textarea name="observaciones" id="obesrvaciones" rows="3" class="form-control"></textarea>
+        </div>
+
+      </div>
+      <div class="form-group text-center">
+        <input type="submit" value="Guardar Cliente" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<%- include ('partials/_footer')%>
