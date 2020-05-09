@@ -1,28 +1,8 @@
 <%- include ('partials/_header')%>
 
-<div class="container">
 
-  <% if (entries.length) { %>
 
-  <div class="col-md-4 offset-md-4">
-    <!-- ciclo for que recorre el objeto. -->
-    <div class="card">
-      <% entries.forEach(function (entry){ %>
-      <div class="card-header bg-primary text-white">
-        <p><%= entry.date%></p> <!-- obtiene el texto del recorrido for -->
-      </div>
-      <div class="card-body">
-        <h1><%= entry.asesor%></h1>
-        <h1><%= entry.cliente%></h1>
-      </div>
-      <% }) %>
-    </div>
-  </div>
 
-  <% } else { %>
-  <p>No hay clientes <a href="/new-entry">agrega uno</a></p>
-  <% } %>
 
-</div>
 
 <%- include ('partials/_footer')%>
