@@ -1,0 +1,246 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  /*Tipografía*/
+  --normal: 16px;
+
+  /* Colores */
+  --primary-color: #2f56ec;
+  --white-color: #ffffff;
+  --black-color: #313337;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+}
+
+.header {
+  color: var(--black-color);
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 1000px;
+  /* width: 100%; */
+  flex: 1; /*Toma todo el ancho de este elemento */
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+  color: var(--black-color);
+}
+
+.nav-links {
+  height: inherit;
+}
+
+img {
+  height: 8vh;
+  margin: 2px;
+}
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /*Toma el 50% de width y de height*/
+  background: var(--primary-color);
+  /* display: none; */
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: var(--white-color);
+  margin: 5px;
+
+  cursor: pointer;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+}
+
+.landing {
+  height: 75vh;
+  display: flex;
+  background-image: url(/img/background.jpg);
+  justify-content: center;
+  align-items: center;
+}
+
+.landing h1 {
+  margin: 100px;
+  font-size: 50px;
+  color: var(--black-color);
+}
+
+/* ====================== Responsive */
+
+@media screen and (max-width: 768px) {
+}
+
+/* 
+nav {
+  background-color: black;
+  height: 10vh;
+
+  justify-content: space-around;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+ margin-left: 15%;
+}
+
+.nav-links li a {
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: var(--normal);
+}
+
+.landing {
+  height: 75vh;
+  display: flex;
+  background-image: url(/img/background.jpg);
+  justify-content: center;
+  align-items: center;
+}
+
+.landing h1 {
+  margin: 100px;
+  font-size: 50px;
+  color: var(--black-color);
+}
+
+====================== Responsive
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 5px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    margin: 2px;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+
+    clip-path: circle(100px at 90% -10%);
+    -webkit-cip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+
+  menu abierto
+  sobre escribe los valores de clip-path para que el menu cubra la pantalla
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-cip-path: circle(1000px at 90% -10%);
+  }
+
+  .landing {
+    flex-direction: column;
+  }
+
+  animaciones de los links 
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li a {
+    font-size: 25px;
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 1s ease-in-out;
+  }
+
+  .nav-links li:nth-child(2) {
+    transition: all 1s ease-in-out;
+  }
+
+  .nav-links li:nth-child(3) {
+    transition: all 1s ease-in-out;
+  }
+
+  .nav-links li.fade {
+    opacity: 1;
+  }
+} */
